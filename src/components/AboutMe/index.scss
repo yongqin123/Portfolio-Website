@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+
+table {
+    top: 50%;
+    width: 60%;
+    //border-collapse: collapse;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+  
+  .fade-in {
+    opacity: 1;
+  }
+
+td {
+    padding-left: 80px;
+    height: 450px;
+    //  max-width: 1000px; 
+    vertical-align: top;
+    //border:1px solid black;
+    border-radius: 20px;
+    
+}
+
+#td_header {
+    text-align: center  ;
+    height: 80px;
+}
+
+#title_aboutme1 {
+    height: 300px;
+    
+}
+
+#title_aboutme2 {
+    //left: 39.8%;
+    //position: absolute;
+    //top: 35%;
+    
+
+    font-size: 65px;
+    font-family: 'Snell Roundhand, cursive';
+    color: #383434;
+    //animation: fadeIn 1s 0.5s backwards;
+    
+}
+
+
+
+
+
+
+.contentsTD {
+    height: 100px;
+    
+    
+}
+
+
+
+.contents {
+    //opacity: 0;
+    //transition: opacity 1s ease-in-out;
+    font-size: 20px;
+    font-family: Inter;
+    color: #828282;
+    animation: fadeIn 1s 0.5s backwards;
+    
+}
+

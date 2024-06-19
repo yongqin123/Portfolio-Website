@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
+
+table {
+    top: 50px;
+    width: 1125px;
+    //border-collapse: collapse;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+  
+  .fade-in {
+    opacity: 1;
+  }
+
+td {
+    padding-left: 80px;
+    height: 450px;
+    //  max-width: 1000px; 
+    vertical-align: top;
+    //border:1px solid black;
+    border-radius: 20px;
+    
+}
+
+.title_space {
+    height: 300px;
+    
+}
+
+#title_myskills {
+    left: 760px;
+    position: absolute;
+    top: 340px;
+    font-size: 75px;
+    font-family: 'Snell Roundhand, cursive';
+    color: #383434;
+    //animation: fadeIn 1s 0.5s backwards;
+    
+}
+
+#title_programming {
+    
+}
+
+
+.contents_skills {
+    //opacity: 0;
+    //transition: opacity 1s ease-in-out;
+    font-size: 20px;
+    font-family: Inter;
+    color: #828282;
+    animation: fadeIn 1s 0.5s backwards;
+    vertical-align: middle;
+}
+
+.header_types_of_skills {
+    width: 100%;
+    top: 200px;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Snell Roundhand, cursive';
+    color: white;
+    background-color: rgb(37, 196, 224);
+    height: 100px;
+}
+
+#front {
+    width: 100%;
+    top: 200px;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Snell Roundhand, cursive';
+    color: white;
+    background-color: black;
+    height: 100px;
+}
+
+i {
+    font-size: 300px;
+}
