@@ -4,7 +4,7 @@ import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faYoutube, faSkype } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose,faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import React from 'react';
 //comment
@@ -15,8 +15,10 @@ import React from 'react';
         </Link>
 */
 
+
 //const Sidebar = () => {
 class Sidebar extends React.Component {
+  
   constructor(props) {
     super(props);
   }
@@ -29,6 +31,7 @@ class Sidebar extends React.Component {
   }
 
   render() {
+    
     //const [showNav, setShowNav] = useState(false);
 
     return (
@@ -51,8 +54,9 @@ class Sidebar extends React.Component {
             </NavLink>
             <div className="dropdown">
               <NavLink className="dropbtn" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" >
-                  {/*}<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/> {*/}<text>Projects</text>
+                  {/*}<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/> {*/}<text>Projects</text>&nbsp;<FontAwesomeIcon icon={faAngleDown} color="#4d4d4e"/>
               </NavLink>
+              
               <div className='dropdown-content'>
                 <NavLink className="dropdown-contents" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/SchoolProjects">
                     {/*}<FontAwesomeIcon icon={faUser} color="#4d4d4e"/> {*/}<text>School Projects</text>

@@ -11,18 +11,19 @@ import Sidebar from "../Sidebar";
 import aboutme from '../../assets/images/aboutme.jpg';
 import skill from '../../assets/images/skill.jpg';
 import programming from '../../assets/images/programming.jpg';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const MySkills = () => {
     
 
         return (
-            <div>
-                <Sidebar />
+            <div id="sky">
+                
 
                 <text id="title_myskills">MY SKILLS</text>
                     <table>
                         <tr><th class="title_space" colSpan={2}></th></tr>
-                        <tr><td><img width="400" height="400" src={skill}/></td><td className="contents_skills"><text >My skills are divided into 5 CATEGORIES:<br /><br />Programming Languages, Front-End Technologies, Back-End Technologies, Databases/Query Languages, Operating Systems.</text></td></tr>
+                        <tr><td><img width="400" height="400" src={skill}/></td><td className="contents_skills"><h2 >My skills are divided into 5 CATEGORIES:<br /><br />Programming Languages, Front-End Technologies, Back-End Technologies, Databases/Query Languages, Operating Systems.</h2></td></tr>
                     </table>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <h1 className="header_types_of_skills">Programming Languages</h1>
@@ -33,18 +34,20 @@ const MySkills = () => {
                         <td><i class="devicon-cplusplus-plain-wordmark colored"></i></td>
                         <td><i class="devicon-java-plain-wordmark colored"></i></td>
                     </tr>
+                    <tr><td></td><td></td><td></td></tr>
                     <tr>
                         <td><i class="devicon-javascript-plain colored"></i></td>
                         <td><i class="devicon-csharp-plain colored"></i></td>
                         <td><i class="devicon-html5-plain-wordmark colored"></i></td>
                     </tr>
+                    <tr><td></td><td></td><td></td></tr>
                     <tr>
                         <td><i class="devicon-css3-plain-wordmark colored"></i></td>
                     
                         
                     </tr>
                 </table>
-
+                <br /><br /><br /><br /><br /><br /><br /><br />
                 <h1 id="front">Front-end Technologies</h1>
 
                 <table>
@@ -54,9 +57,9 @@ const MySkills = () => {
                         <td><i class="devicon-angular-plain-wordmark "></i></td>
                     </tr>
                 </table>
-
+                <br /><br /><br /><br /><br /><br /><br /><br />
                 <h1 id="front">Back-end Technologies</h1>
-
+                
                 <table>
                     <tr>
                         <td><i class="devicon-flask-plain-wordmark colored"></i></td>
@@ -64,6 +67,7 @@ const MySkills = () => {
                         <td><i class="devicon-php-plain colored"></i></td>
                     </tr>
                 </table>
+                <br /><br /><br /><br /><br /><br /><br /><br />
                 <h1 id="front">Database/Query Technologies</h1>
                 <table>
                     <tr>
@@ -72,6 +76,7 @@ const MySkills = () => {
                         <td><i class="devicon-mongodb-plain-wordmark colored"></i></td>
                     </tr>
                 </table>
+                <br /><br /><br /><br /><br /><br /><br /><br />
                 <h1 id="front">Operating System</h1>
                 <table>
                     <tr>

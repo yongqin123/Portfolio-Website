@@ -43,17 +43,17 @@ const SchoolProjects = () => {
             
 
             <div>
-                <Sidebar />
+                
                 <table>
                     <tr>
                         <th colSpan={2} id='title'>
-                            <text id="title_text"><b>School Projects</b></text>
+                            <text id="title_text2"><b>School Projects</b></text>
                             <br />
                             <br />
                             <br />
                             <br />
                             <br />
-                            <text id="title_text_contents">Below are the projects that I have done in University Of Wollongong.</text>
+                            <text id="title_text_contents2">Below are the projects that I have done in University Of Wollongong.</text>
                         </th>
                     </tr>
                     <tr>
@@ -72,11 +72,11 @@ const SchoolProjects = () => {
                             <p>
                                 <br />
                                 
-                                <text className='projectName'><b>1&#41; Online Food Ordering System</b></text>
+                                <text className='projectName2'><b>1&#41; Online Food Ordering System</b></text>
                                 <br />
                                 <br />
                                 <br />
-                                <text className="contents">    
+                                <text className="contents1">    
                                     <div className="border_bottom2">This project aims to build a full stack web-based software to support<br /></div><div className="border_bottom1">restaurant staff in managing and fulfilling orders.</div>
                                     
                                 </text>
@@ -109,11 +109,11 @@ const SchoolProjects = () => {
                         <p>
                             <br />
                             
-                            <text className="projectName"><b>2&#41; E-voting System</b></text>
+                            <text className="projectName2"><b>2&#41; E-voting System</b></text>
                             <br />
                             <br />
                             <br />
-                            <text className="contents">
+                            <text className="contents1">
                                 <div className="border_bottom2">This project aims to build a full stack web-based software by having a<br />secure voting
                                 platform that guarantees voter anonymity and safeguards<br /></div><div className="border_bottom1">voter credentials through fully homomorphic encryption.</div>
                         
@@ -140,11 +140,11 @@ const SchoolProjects = () => {
                         
                         <p className="border_bottom2">
                            
-                            <text className="projectName"><b>3&#41; Video Conferencing Tool Booking System</b></text>
+                            <text className="projectName2"><b>3&#41; Video Conferencing Tool Booking System</b></text>
                             <br />
                             <br />
                             <br />
-                            <text className="contents">
+                            <text className="contents1">
                                 <div >This project aims to build a conferencing tool that allows students to book<br />for video conference timeslots and teachers to create new video<br />conferencing timeslots, and also to demonstrate project management skills.</div>
                         
                                 

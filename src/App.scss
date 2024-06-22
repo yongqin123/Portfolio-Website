@@ -21,3 +21,12 @@ $primary-color: #ffd700;
 input, textarea {
     font-family: 'Helvetica Neue';
 }
+
+body {
+    background-color: blanchedalmond;
+    background-image: url("./assets/images/test2.jpg");
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+    text-align: center;
+}

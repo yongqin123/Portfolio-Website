@@ -26,7 +26,7 @@ td {
     height: 100px;
     //  max-width: 1000px; 
     //vertical-align: top;
-    
+    //border: 1px solid black;
     border-radius: 20px;
     
 }
@@ -35,15 +35,15 @@ td {
     height: 450px;
 }
 
-#title_text {
+#title_text2 {
     font-size: 64px;
-    font-family: Inter;
-    color: black;
+    font-family: "Inter";
+    color: White;
 }
-#title_text_contents {
+#title_text_contents2 {
     font-size: 24px;
     font-family: Inter;
-    color: #828282;
+    color: #dfdddda6;
 }
 
 .contentsTD {
@@ -52,16 +52,17 @@ td {
     
 }
 
-.projectName {
-    font-size: 24px;
+.projectName2 {
+    font-size: 32px;
     font-family: Inter;
-    color: black;
+    color: white;
+    text-align: left;
 }
 
-.contents {
+.contents1 {
     font-size: 20px;
     font-family: Inter;
-    color: #828282;
+    color: white;
     
 }
 
@@ -78,18 +79,20 @@ td {
   }
   
   .slide img {
-    
-    display: block;
+    margin: auto;
+    //display: block;
   }
   
-  .prev,
-  .next {
+  .prev
+  {
     cursor: pointer;
+    right: 440px;
+    
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-right: 340px;
+    margin-right: 400px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
@@ -99,9 +102,11 @@ td {
     user-select: none;
     background-color: rgba(0,0,0,0.5);
   }
+
+  
   
   .next {
-    right: 0;
+    margin-left: 300px;
     border-radius: 3px 0 0 3px;
   }
   

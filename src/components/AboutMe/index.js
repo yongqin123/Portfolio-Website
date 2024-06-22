@@ -16,8 +16,8 @@ const AboutMe = () => {
     
 
         return (
-            <div>
-                <Sidebar />
+            <div id="book">
+                
                 
                     
                     <table>

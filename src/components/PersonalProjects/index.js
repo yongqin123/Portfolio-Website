@@ -22,7 +22,7 @@ import image4 from "../../assets/images/party_edit.png";
 import portfolio from "../../assets/images/portfolio.jpeg";
 
 const PersonalProjects = () => {
-    const images = [portfolio, image2, image3, image4];
+    const images = [portfolio];
       const [currentIndex, setCurrentIndex] = useState(0);
 
       const goToPrevious = () => {
@@ -43,7 +43,7 @@ const PersonalProjects = () => {
             
 
             <div>
-                <Sidebar />
+                
                 <table>
                     <tr>
                         <th colSpan={2} id='title'>

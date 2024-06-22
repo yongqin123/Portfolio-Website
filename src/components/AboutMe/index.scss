@@ -72,3 +72,18 @@ td {
     
 }
 
+body {
+    //background-image:none
+}
+
+#book {
+    background-image: url("../../assets/images/test6.jpg");
+      background-repeat: no-repeat;
+      
+      background-size: cover;
+      text-align: center;
+      //background-size: 110% 110%;
+      //background-position: center center;
+      //animation: shrink 5s infinite alternate;
+      height: 950px;
+  }

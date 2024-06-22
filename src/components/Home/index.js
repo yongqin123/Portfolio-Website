@@ -12,16 +12,17 @@ class Home extends React.Component {
     render() {
         
         return (
-            <div className="container home-page">
+            <div id="home" className="container home-page">
+                
                 <div className="text-zone">
+                    <b>
                     <h1>Hi, I am<br />
                         
                 {this.props.name},
-                <br />
-                Software Developer
+                <br />Software Developer
                 </h1>
                 <h2>Frontend Developer / Backend Developer</h2>
-                
+                </b>
                 </div>
             </div>
         );
