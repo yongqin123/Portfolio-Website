@@ -19,6 +19,7 @@ import image1 from "../../assets/images/voter_home.png";
 import image2 from "../../assets/images/election_results.png";
 import image3 from "../../assets/images/manage_election.png";
 import image4 from "../../assets/images/party_edit.png";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const SchoolProjects = () => {
@@ -42,20 +43,20 @@ const SchoolProjects = () => {
         return (
             
 
-            <div>
-                
+            <div id="schoolprojects">
+                <ScrollToTop smooth />
                 <table>
                     <tr>
-                        <th colSpan={2} id='title'>
+                        <th colSpan={2}>
+                            <br />
                             <text id="title_text2"><b>School Projects</b></text>
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <br />
+                            
                             <text id="title_text_contents2">Below are the projects that I have done in University Of Wollongong.</text>
                         </th>
                     </tr>
+                    <tr><td></td></tr>
                     <tr>
                         <td>
                             

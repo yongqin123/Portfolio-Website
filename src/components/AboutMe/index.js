@@ -22,12 +22,10 @@ const AboutMe = () => {
                     
                     <table>
                         <tr><th id="title_aboutme1" colSpan={2}></th></tr>
-                        <tr><td rowSpan={3}><img width="400" height="400" src={aboutme}/></td><td id='td_header'></td></tr>
+                        <tr><td rowSpan={3}><img id="aboutimg" width="400" height="400" src={aboutme}/></td><td id='td_header'></td></tr>
+                        
                         <tr>
-                            <td id='td_header'><text id="title_aboutme2">ABOUT ME</text></td>
-                        </tr>
-                        <tr>
-                            <td><text className="contents"><br />I am Yong Qin, a recent graduate with a strong passion for programming and cybersecurity.<br /><br />In my spare time, I enjoy self-learning new programming languages and acquiring new skills. My hobbies include playing the guitar, coding, gaming, and exercising.</text></td>
+                            <td></td><td></td><td className='contents4'><text className="contents3"><br />I am Yong Qin, a recent graduate with a strong passion for programming and cybersecurity.<br /><br />In my spare time, I enjoy self-learning new programming languages and acquiring new skills. My hobbies include playing the guitar, coding, gaming, and exercising.</text></td>
                         </tr>
                     </table>
                 

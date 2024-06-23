@@ -9,26 +9,28 @@ import { Link, NavLink } from 'react-router-dom';
 import React from 'react';
 import Sidebar from "../Sidebar";
 import aboutme from '../../assets/images/aboutme.jpg';
-import skill from '../../assets/images/skill.jpg';
+import skill from '../../assets/images/skill.png';
 import programming from '../../assets/images/programming.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollToTop from "react-scroll-to-top";
 
 const MySkills = () => {
     
 
         return (
             <div id="sky">
-                
+                <ScrollToTop smooth />
 
-                <text id="title_myskills">MY SKILLS</text>
+                <text id="title_myskills">MY SKILLSETS</text>
                     <table>
-                        <tr><th class="title_space" colSpan={2}></th></tr>
-                        <tr><td><img width="400" height="400" src={skill}/></td><td className="contents_skills"><h2 >My skills are divided into 5 CATEGORIES:<br /><br />Programming Languages, Front-End Technologies, Back-End Technologies, Databases/Query Languages, Operating Systems.</h2></td></tr>
+                        <tr><th class="title_space" ></th></tr>
+                        <tr><td><img id="skillimg" width="500" height="400" src={skill}/></td><td className="contents_skills"><h2 ><b>FIVE TYPES:</b><br /><br />Programming Languages<br />Front-End Technologies<br />Back-End Technologies<br />Databases/Query Languages Operating Systems.</h2></td></tr>
                     </table>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <h1 className="header_types_of_skills">Programming Languages</h1>
+                <h1 id="front">Programming Languages</h1><br />
                 
-                <table>
+                <table className="table_skills">
+                    <tr><td></td></tr>
                     <tr>
                         <td><i class="devicon-python-plain-wordmark colored"></i></td>
                         <td><i class="devicon-cplusplus-plain-wordmark colored"></i></td>
@@ -43,47 +45,54 @@ const MySkills = () => {
                     <tr><td></td><td></td><td></td></tr>
                     <tr>
                         <td><i class="devicon-css3-plain-wordmark colored"></i></td>
-                    
-                        
                     </tr>
+                    <tr><td></td></tr>
                 </table>
                 <br /><br /><br /><br /><br /><br /><br /><br />
-                <h1 id="front">Front-end Technologies</h1>
+                <h1 id="front">Front-end Technologies</h1><br />
 
-                <table>
-                    <tr>
+                <table className="table_skills">
+                <tr><td></td></tr>
+                    <tr >
                         <td><i class="devicon-react-plain-wordmark colored"></i></td>
                         <td><i class="devicon-bootstrap-plain-wordmark colored"></i></td>
                         <td><i class="devicon-angular-plain-wordmark "></i></td>
                     </tr>
+                    <tr><td></td></tr>
                 </table>
                 <br /><br /><br /><br /><br /><br /><br /><br />
-                <h1 id="front">Back-end Technologies</h1>
+                <h1 id="front">Back-end Technologies</h1><br />
                 
-                <table>
+                <table className="table_skills">
+                <tr><td></td></tr>
                     <tr>
                         <td><i class="devicon-flask-plain-wordmark colored"></i></td>
                         <td><i class="devicon-nodejs-plain-wordmark colored"></i></td>
                         <td><i class="devicon-php-plain colored"></i></td>
                     </tr>
+                    <tr><td></td></tr>
                 </table>
                 <br /><br /><br /><br /><br /><br /><br /><br />
-                <h1 id="front">Database/Query Technologies</h1>
-                <table>
+                <h1 id="front">Database/Query Technologies</h1><br />
+                <table className="table_skills">
+                <tr><td></td></tr>
                     <tr>
                         <td><i class="devicon-mysql-plain-wordmark colored"></i></td>
                         <td><i class="devicon-postgresql-plain-wordmark colored"></i></td>
                         <td><i class="devicon-mongodb-plain-wordmark colored"></i></td>
                     </tr>
+                    <tr><td></td></tr>
                 </table>
                 <br /><br /><br /><br /><br /><br /><br /><br />
-                <h1 id="front">Operating System</h1>
-                <table>
+                <h1 id="front">Operating System</h1><br />
+                <table className="table_skills">
+                <tr><td></td></tr>
                     <tr>
                         <td><i class="devicon-windows11-plain-wordmark colored"></i></td>
                         <td><i class="devicon-linux-plain colored"></i></td>
                         
                     </tr>
+                    <tr><td></td></tr>
                 </table>
                 
             </div>

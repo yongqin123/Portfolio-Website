@@ -62,14 +62,14 @@ td {
 
 
 
-.contents {
+.contents3 {
     //opacity: 0;
     //transition: opacity 1s ease-in-out;
     font-size: 20px;
     font-family: Inter;
-    color: #828282;
+    color: #000000;
     animation: fadeIn 1s 0.5s backwards;
-    
+     
 }
 
 body {
@@ -77,7 +77,7 @@ body {
 }
 
 #book {
-    background-image: url("../../assets/images/test6.jpg");
+    //background-image: url("../../assets/images/test6.jpg");
       background-repeat: no-repeat;
       
       background-size: cover;
@@ -86,4 +86,10 @@ body {
       //background-position: center center;
       //animation: shrink 5s infinite alternate;
       height: 950px;
+  }
+
+
+  #aboutimg {
+    border-radius: 25px;
+    border: 1px solid black;
   }
