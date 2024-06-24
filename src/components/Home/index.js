@@ -12,6 +12,13 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
     }
+    github() {
+        window.open('https://github.com/yongqin123', '_blank').focus();
+      }
+      linkedin() {
+        window.open("https://linkedin.com/in/yong-qin-toh-04a41b27b", '_blank').focus();
+      }
+    
 
     render() {
         
