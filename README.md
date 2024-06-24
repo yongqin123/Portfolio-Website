@@ -6,4 +6,6 @@ At root directory, run the command:
 <br>
 npm install react-scripts
 <br>
+npm install react-scroll-to-top
+<br>
 npm start
