@@ -22,7 +22,7 @@ const MySkills = () => {
                 <ScrollToTop smooth />
 
                 <text id="title_myskills">MY SKILLSETS</text>
-                    <table>
+                    <table >
                         <tr><th class="title_space" ></th></tr>
                         <tr><td><img id="skillimg" width="500" height="400" src={skill}/></td><td className="contents_skills"><h2 ><b>FIVE TYPES:</b><br /><br />Programming Languages<br />Front-End Technologies<br />Back-End Technologies<br />Databases/Query Languages Operating Systems.</h2></td></tr>
                     </table>
