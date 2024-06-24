@@ -4,7 +4,7 @@ import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faYoutube, faSkype } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose,faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose,faAngleDown, faCogs, faSchool, faTasks, faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import React from 'react';
 //comment
@@ -44,42 +44,29 @@ class Sidebar extends React.Component {
         <nav>
             <text className='flat-button'>My Personal Porfolio</text>
             <NavLink style={{ textDecoration: 'none' }} activeclassname="active" to="/">
-                {/*} <FontAwesomeIcon icon={faHome} color="#4d4d4e"/> {*/}<text>Home</text>
+                <FontAwesomeIcon icon={faHome} color="#fffff"/>&nbsp;<text>Home</text>
             </NavLink>
             <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/AboutMe">
-                {/*}<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/> {*/}<text>About Me</text>
+                <FontAwesomeIcon icon={faUser} color="#fffff"/>&nbsp;<text>About Me</text>
             </NavLink>
             <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/MySkills">
-                {/*}<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/> {*/}<text>My Skills</text>
+                <FontAwesomeIcon icon={faCogs} color="#fffff"/>&nbsp;<text>Skillsets</text>
             </NavLink>
             <div className="dropdown">
               <NavLink className="dropbtn" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" >
-                  {/*}<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/> {*/}<text>Projects</text>&nbsp;<FontAwesomeIcon icon={faAngleDown} color="#4d4d4e"/>
+                  <text>Projects</text>&nbsp;<FontAwesomeIcon icon={faAngleDown} color="#4d4d4e"/>
               </NavLink>
               
               <div className='dropdown-content'>
                 <NavLink className="dropdown-contents" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/SchoolProjects">
-                    {/*}<FontAwesomeIcon icon={faUser} color="#4d4d4e"/> {*/}<text>School Projects</text>
+                    <text>School Projects</text>
                 </NavLink>
                 <NavLink className="dropdown-contents" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/PersonalProjects">
-                    {/*}<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/> {*/}<text>Personal Projects</text>
+                    <text>Personal Projects</text>
                 </NavLink>
               </div>
             </div>
-            <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" className="contact-link" onClick={this.github}>
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#4d4d4e"
-              className="anchor-icon"
-            /><text> Github</text>
-            </NavLink>
-            <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" className="contact-link" onClick={this.linkedin}>
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#4d4d4e"
-              className="anchor-icon"
-            /><text> LinkedIn</text>
-            </NavLink>
+            
         </nav>
 
         

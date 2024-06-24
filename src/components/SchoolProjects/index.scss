@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter");
+* {
+    text-align: left;
+}
 .images {
     width: 700px;
     height: 400px;
@@ -10,40 +13,37 @@ table {
     top: 50%;
     max-width: 1400px;
     //border-collapse: collapse;
-    //margin-left: auto;
-    //margin-right: auto;
-    
     
 }
 
 tr {
-    max-width: 1400px;
+    //max-width: 1400px;
 }
 
 td {
     //padding-left: 80px;
-    max-width: 700px;
+    //max-width: 700px;
     height: 100px;
     //  max-width: 1000px; 
     //vertical-align: top;
     //border: 1px solid black;
-    border-radius: 20px;
+    //border-radius: 20px;
     
 }
 
 #title {
-    height: 450px;
+    height: 200px;
 }
 
 #title_text2 {
     font-size: 64px;
     font-family: "Inter";
-    color: White;
+    color: Black;
 }
 #title_text_contents2 {
     font-size: 24px;
     font-family: Inter;
-    color: #dfdddda6;
+    color: Black;
 }
 
 .contentsTD {
@@ -55,14 +55,14 @@ td {
 .projectName2 {
     font-size: 32px;
     font-family: Inter;
-    color: white;
-    text-align: left;
+    color: gold;
+    text-align: black;
 }
 
 .contents1 {
     font-size: 20px;
     font-family: Inter;
-    color: white;
+    color: black;
     
 }
 
@@ -79,14 +79,14 @@ td {
   }
   
   .slide img {
-    margin: auto;
+    //margin: auto;
     //display: block;
   }
   
   .prev
   {
     cursor: pointer;
-    right: 440px;
+    //right: 440px;
     
     position: absolute;
     top: 50%;
@@ -114,3 +114,19 @@ td {
   .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+
+
+  #schoolprojects {
+    //background-color: blanchedalmond;
+    //background-image: url("../../assets/images/test5.jpg");
+    //background-color: rgba(0, 0, 0, 0.836);
+    //width: 1903px;
+    background-repeat: no-repeat;
+    height: 2400px;
+    background-size:cover;
+    text-align: center;
+    //background-size: 110% 110%;
+    //background-position: center center;
+    //animation: shrink 5s infinite alternate;
+    //height: 100%;
+}
