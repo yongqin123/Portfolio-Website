@@ -50,10 +50,12 @@ const PersonalProjects = () => {
                             <text id="title_text"><b>Personal Projects</b></text>
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <br />
+                            
                             <text id="title_text_contents">Below are the projects that I have done myself.</text>
+                            <br />
+                            <br /><br />
+                            <br /><br />
+                            <br />
                         </th>
                     </tr>
                     

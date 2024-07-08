@@ -15,14 +15,32 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollToTop from "react-scroll-to-top";
 
 const MySkills = () => {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        });
     
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    
+        // Clean up observer on component unmount
+        return () => {
+          hiddenElements.forEach((el) => observer.unobserve(el));
+        };
+      }, []); // Empty dependency array ensures this effect runs only once on mount
 
         return (
             <div id="sky">
                 <ScrollToTop smooth />
 
                 <text id="title_myskills">MY SKILLSETS</text>
-                    <table >
+                    <table className="hidden">
                         <tr><th class="title_space" ></th></tr>
                         <tr><td><img id="skillimg" width="500" height="400" src={skill}/></td><td className="contents_skills"><h2 ><b>FIVE TYPES:</b><br /><br />Programming Languages<br />Front-End Technologies<br />Back-End Technologies<br />Databases/Query Languages Operating Systems.</h2></td></tr>
                     </table>
@@ -32,9 +50,9 @@ const MySkills = () => {
                 <table className="table_skills">
                     <tr><td></td></tr>
                     <tr>
-                        <td><i class="devicon-python-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-cplusplus-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-java-plain-wordmark colored"></i></td>
+                        <td><i class="devicon-python-plain-wordmark colored hidden"></i></td>
+                        <td><i class="devicon-cplusplus-plain-wordmark colored hidden"></i></td>
+                        <td><i class="devicon-java-plain-wordmark colored hidden"></i></td>
                     </tr>
                     <tr><td></td><td></td><td></td></tr>
                     <tr>
@@ -54,9 +72,9 @@ const MySkills = () => {
                 <table className="table_skills">
                 <tr><td></td></tr>
                     <tr >
-                        <td><i class="devicon-react-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-bootstrap-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-angular-plain-wordmark "></i></td>
+                        <td><i class="devicon-react-plain-wordmark colored hidden"></i></td>
+                        <td><i class="devicon-bootstrap-plain-wordmark colored hidden"></i></td>
+                        <td><i class="devicon-angular-plain-wordmark hidden"></i></td>
                     </tr>
                     <tr><td></td></tr>
                 </table>
@@ -66,9 +84,9 @@ const MySkills = () => {
                 <table className="table_skills">
                 <tr><td></td></tr>
                     <tr>
-                        <td><i class="devicon-flask-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-nodejs-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-php-plain colored"></i></td>
+                        <td><i class="devicon-flask-plain-wordmark colored  hidden"></i></td>
+                        <td><i class="devicon-nodejs-plain-wordmark colored  hidden"></i></td>
+                        <td><i class="devicon-php-plain colored  hidden"></i></td>
                     </tr>
                     <tr><td></td></tr>
                 </table>
@@ -77,9 +95,9 @@ const MySkills = () => {
                 <table className="table_skills">
                 <tr><td></td></tr>
                     <tr>
-                        <td><i class="devicon-mysql-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-postgresql-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-mongodb-plain-wordmark colored"></i></td>
+                        <td><i class="devicon-mysql-plain-wordmark colored  hidden"></i></td>
+                        <td><i class="devicon-postgresql-plain-wordmark colored  hidden"></i></td>
+                        <td><i class="devicon-mongodb-plain-wordmark colored  hidden"></i></td>
                     </tr>
                     <tr><td></td></tr>
                 </table>
@@ -88,8 +106,8 @@ const MySkills = () => {
                 <table className="table_skills">
                 <tr><td></td></tr>
                     <tr>
-                        <td><i class="devicon-windows11-plain-wordmark colored"></i></td>
-                        <td><i class="devicon-linux-plain colored"></i></td>
+                        <td><i class="devicon-windows11-plain-wordmark colored  hidden"></i></td>
+                        <td><i class="devicon-linux-plain colored  hidden"></i></td>
                         
                     </tr>
                     <tr><td></td></tr>

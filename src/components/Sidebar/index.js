@@ -7,30 +7,27 @@ import { faLinkedin, faGithub, faYoutube, faSkype } from '@fortawesome/free-bran
 import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose,faAngleDown, faCogs, faSchool, faTasks, faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import React from 'react';
-//comment
-/*
-<Link className='logo' to='/'>
-            <img src={LogoS} alt="logo" />
-            <img src={LogoSubtitle} alt="slobodan" />
-        </Link>
-*/
+
 
 
 //const Sidebar = () => {
-class Sidebar extends React.Component {
+const Sidebar = () => {
   
-  constructor(props) {
-    super(props);
-  }
+ 
+  const [activePage, setActivePage] = useState('home'); // Default active page
 
-  github() {
+  const handlePageChange = (pageName) => {
+    setActivePage(pageName);
+  };
+
+  function github() {
     window.open('https://github.com/yongqin123', '_blank').focus();
   }
-  linkedin() {
+  function linkedin() {
     window.open("https://linkedin.com/in/yong-qin-toh-04a41b27b", '_blank').focus();
   }
 
-  render() {
+  
     
     //const [showNav, setShowNav] = useState(false);
 
@@ -43,25 +40,25 @@ class Sidebar extends React.Component {
 
         <nav>
             <text className='flat-button'>My Personal Porfolio</text>
-            <NavLink style={{ textDecoration: 'none' }} activeclassname="active" to="/">
+            <NavLink style={{ textDecoration: 'none' }} activeclassname="active" to="/" className={activePage === 'home' ? 'active' : ''}  onClick={() => handlePageChange('home')}>
                 <FontAwesomeIcon icon={faHome} color="#fffff"/>&nbsp;<text>Home</text>
             </NavLink>
-            <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/AboutMe">
+            <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" className={activePage === 'about' ? 'active' : ''} to="/AboutMe" onClick={() => handlePageChange('about')}>
                 <FontAwesomeIcon icon={faUser} color="#fffff"/>&nbsp;<text>About Me</text>
             </NavLink>
-            <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/MySkills">
+            <NavLink style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/MySkills" className={activePage === 'skills' ? 'active' : ''} onClick={() => handlePageChange('skills')}>
                 <FontAwesomeIcon icon={faCogs} color="#fffff"/>&nbsp;<text>Skillsets</text>
             </NavLink>
             <div className="dropdown">
-              <NavLink className="dropbtn" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" >
+              <NavLink className="dropbtn activePage === 'projects' ? 'active' : ''" style={{ textDecoration: 'none' }} exact="true" >
                   <text>Projects</text>&nbsp;<FontAwesomeIcon icon={faAngleDown} color="#4d4d4e"/>
               </NavLink>
               
               <div className='dropdown-content'>
-                <NavLink className="dropdown-contents" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/SchoolProjects">
+                <NavLink className="dropdown-contents activePage === 'projects' ? 'active' : ''" style={{ textDecoration: 'none' }} exact="true"  to="/SchoolProjects" >
                     <text>School Projects</text>
                 </NavLink>
-                <NavLink className="dropdown-contents" style={{ textDecoration: 'none' }} exact="true" activeclassname="active" to="/PersonalProjects">
+                <NavLink className="dropdown-contents activePage === 'projects' ? 'active' : ''" style={{ textDecoration: 'none' }} exact="true"  to="/PersonalProjects">
                     <text>Personal Projects</text>
                 </NavLink>
               </div>
@@ -80,7 +77,7 @@ class Sidebar extends React.Component {
 
     </div>
     );
-  }
+  
 };
 
 export default Sidebar;
