@@ -13,7 +13,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import video1 from "../../videos/foodOrderingSystem.mp4";
-import video2 from "../../videos/evoting.mp4";
+
 import video3 from "../../videos/conferencing_tool.mp4";
 import image1 from "../../assets/images/voter_home.png";
 import image2 from "../../assets/images/election_results.png";
